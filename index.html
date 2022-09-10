@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="java/jquery-3.6.0.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>myopay</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+	<main>
+		<div class="checkload"></div>
+		
+
+		<script type="text/javascript">
+		//	setInterval(function(){
+
+
+			
+				$(document).ready(function(){
+				$('.checkload').load('checklogin.php');
+			});
+		//	});
+			</script>
+<div class="forregister">
+	<div class="signup">
+
+
+						<script type="text/javascript">
+				$(document).ready(function () {
+				$('.register').on('submit',function (para) {
+					para.preventDefault();
+					$.ajax({
+				url:"procesignup.php",
+                 type:"post",
+                 data:new FormData(this),
+                 contentType:false,
+                 cache:false,
+                 processData:false,
+                 beforeSend:function(){
+                  $('.showx').html("wait");
+                 },
+                 success:function(para2){
+                 	$('.showx').html(para2);
+                 },
+                 error:function(){
+                 	alert('error typing to processData');
+                 }
+
+					})
+				});
+				})
+			</script>
+			<div class="showx">join now</div>
+		<form class="register" action="procesignup.php" method="post">
+			<div>
+				<label>firstname</label>
+				<input type="text" name="firstname" placeholder="firstname">
+			</div>
+
+
+			<div>
+				<label>lastname</label>
+				<input type="text" name="lastname" placeholder="lastname">
+			</div>
+
+			<div>
+				<label>email</label>
+				<input type="text" name="email" placeholder="email">
+			</div>
+
+
+			<div>
+				<label>date of birth</label>
+				<input type="date" name="date">
+			</div>
+				<div>
+				
+				<label style="display: flex; justify-content:space-around;">male<input type="radio"  name="sex"  value="male"></label>
+				<hr style="width:60%;">
+				<label style="display: flex; justify-content:space-around;">female<input type="radio"  name="sex" value="female"></label>
+			</div>
+
+
+                
+			     <div>
+				<label>Password</label>
+				<input type="Password" name="Password" placeholder="Password">
+			</div>  
+
+               <div>
+				<label>confirmPassword</label>
+				<input type="Password" name="confirmPassword" placeholder="confirmPassword">
+			</div>
+
+
+		
+
+			<div>
+				
+				<input type="submit" name="reg" value="Register" style=" width: 50%;height: 40px;background: blue; color: white;margin-top: 6px;">
+			</div>
+		</form>
+		<span class="showlogin"> alerady have an account</span>
+	</div>
+	<div class="signin">
+		<form class="login" action="processingin.php" method="post">
+
+                    
+
+                         <div>
+				
+				<input type="email" name="email" placeholder="email">
+			</div> 
+
+
+
+			     <div>
+			
+				<input type="Password" name="Password" placeholder="Password">
+			</div>
+
+
+		
+
+			<div>
+				
+				<input type="submit" name="reg" value="Register" style=" width: 50%;height: 40px;background: blue; color: white;margin-top: 6px;">
+			</div>
+			
+
+		</form>
+		<span class="showsigup">dont have an account</span>
+	</div>
+</div>
+<div class="homepage">
+	<section class="sec1">
+		<!--*********************************************home****************************************************************--->
+		<div class="home">
+			<div class="homehead">
+			
+			</div>
+
+			<div class="homebody">
+
+					<div class="p"></div>
+				<div class="mytextdiv">
+					<h2>Welcome to my opay app</h2>
+				</div>
+
+				<div class="dasboardbig">
+					<div class="dasboard">
+						<h4 class="nae"><script type="text/javascript">
+							$(document).ready(function () {
+							 $('.nae').load('firstnprocess.php');
+							})
+						</script></h4>
+						<p>Total Banlance</p>
+						<h2 class="a"><script type="text/javascript">
+							$(document).ready(function () {
+							 $('.a').load('amount.php');
+							})
+						</script></h2>
+					</div>
+				</div>
+
+					<div class="labeldiv">
+						<div class="labeldivsmall">
+							<label class="fa fa-paper-plane showsend"><p>Send</p></label>
+							<label class="fa fa-credit-card"><p>Add money</p></label>
+							<label class="fa fa-briefcase  showWithdraw"><p>Withdraw</p></label>
+                                                       
+
+						</div>
+					</div>
+
+			</div>
+		</div>
+
+<!---------------------------*******************************end************************-->
+		<div class="notification">
+					<div class="notificationhead">
+						<h2>Notification</h2>
+					</div>
+							<div class="notificationbody">
+
+								<script type="text/javascript">
+									$(document).ready(function () {
+										$('.notificationbody').load('shownoitfication.php')
+									})
+								</script>
+
+
+
+
+
+
+
+		</div>
+		</div>
+
+
+<!-*************************************************************************************-->
+		<div class="user">
+			<div class="userhead">
+				<button><a href="logout.php">logout</a></button>
+			</div>
+			<div class="userbody">
+				
+             <div class="showusername">
+             
+          <div class="userprofilediv">
+               	<div class="userimage"></div>
+               	<div class="username">
+               		<h3 class="n2"><script type="text/javascript">
+							$(document).ready(function () {
+							 $('.n2').load('firstnprocess.php');
+							})
+						</script></h3>
+               		<span class="em">
+               			<script type="text/javascript">
+							$(document).ready(function () {
+							 $('.em').load('usernameload.php');
+							})
+						</script>
+               		</span>
+               	</div>
+               	
+               </div>
+             </div>
+                   
+
+
+                   <div class="bigcloum">
+
+                   	<div class="smallcolum">
+                   		<span class="fa fa-envelope"><p>Change email</p></span>
+                   		<label class="fa fa-arrow-right"></label>
+                   	</div>
+
+                              
+
+                      <div class="smallcolum">
+                   		<span class="fa fa-envelope"><p>Change email</p></span>
+                   		<label class="fa fa-arrow-right"></label>
+                   	</div>
+                                                                   	<div class="smallcolum">
+                   		<span class="fa fa-envelope"><p>Change email</p></span>
+                   		<label class="fa fa-arrow-right"></label>
+                   	</div>
+                                                               	<div class="smallcolum">
+                   		<span class="fa fa-envelope"><p>Change email</p></span>
+                   		<label class="fa fa-arrow-right"></label>
+                   	</div>
+                                                                   	<div class="smallcolum">
+                   		<span class="fa fa-envelope"><p>Change email</p></span>
+                   		<label class="fa fa-arrow-right"></label>
+                   	</div>
+
+
+                   </div>
+			</div>
+		</div>
+	</section>
+	<section class="sec2">
+		<label class="h fa fa-home"></label>
+		<label class="n fa fa-bell"></label>
+		<label class="u fa fa-user"></label>
+	</section>
+</div>	
+
+<!---------------------------------------------send----------------------------------------------------------------------------->
+
+                                                           <div class="send">
+                                                           	  <div class="sendhead">
+                                                           	  	<label class="closesend fa fa-times"> Transfer</label>
+                                                           	  </div>
+                                                           	  <div class="container">
+                                                           	    <form class="sendbody"  action="processsend.php" method="post">
+                                                           	    	
+                                                           	    	<div class="buttondiv">
+                                                           	    		<button type="button" class="fa fa-user  showpersonal">Personal</button>
+                                                           	    		<button type="button" class="fa fa-university    showbank">Bank</button>
+                                                           	    	</div>
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Email</label>
+                                                           	    		<input type="text" name="email" placeholder="email">
+                                                           	    	</div>
+
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Amount</label>
+                                                           	    		<input type="number" name="amount" placeholder="Enter amount ">
+                                                           	    	</div>
+
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>pin</label>
+                                                           	    		<input type="number" name="pin" placeholder="pin ">
+                                                           	    	</div>
+                                                           	    	
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		
+                                                           	    		<input type="submit" name="send" value="Done" style="width:50%;
+                                                           	    		display: flex; align-items: center; justify-content: center; outline: none;
+                                                           	    		border: none; border-radius: 4px; background: skyblue;font-family: Arial Rounded MT;
+                                                           	    		font-weight: bold;">
+                                                           	    	</div>
+
+                                                           	    </form>
+
+
+
+
+
+                                                           	    <!--------------------------->
+
+
+                                                           	    <form class="Bankbodys">
+                                                           	    	
+                                                           	    	<div class="buttondiv">
+                                                           	    		<button type="button" class="fa fa-user   showpersonal">Personal</button>
+                                                           	    		<button type="button" class="fa fa-university   showbank">Bank</button>
+                                                           	    	</div>
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Bank name</label>
+                                                           	    		<select>
+                                                           	    			<option>Banks</option>
+                                                           	    		</select>
+                                                           	    	</div>
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Account number</label>
+                                                           	    		<input type="text" name="email" placeholder="Enter account number">
+                                                           	    	</div>
+
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Amount</label>
+                                                           	    		<input type="number" name="amount" placeholder="Enter amount ">
+                                                           	    	</div>
+                                                           	    	
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		
+                                                           	    		<input type="submit" name="bank" value="Done" style="width:50%;
+                                                           	    		display: flex; align-items: center; justify-content: center; outline: none;
+                                                           	    		border: none; border-radius: 4px; background: skyblue;font-family: Arial Rounded MT;
+                                                           	    		font-weight: bold;">
+                                                           	    	</div>
+
+                                                           	    </form>
+                                                           	    </div>
+                                                           </div>
+
+<!--------------------------------------------withdraw------------------------------------------------->	
+                                           <div class="Withdraw">
+                                           	<div class="Withdrawhead">
+                                           		<label class="fa fa-times closewithdraw"></label>
+                                           		<h3>Withdraw</h3>
+                                           	</div>
+                                           	<form  class="Withdrawbody">
+                                           		
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Account number</label>
+                                                           	    		<input type="text" name="email" placeholder="Enter account number">
+                                                           	    	</div>
+
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		<label>Amount</label>
+                                                           	    		<input type="number" name="amount" placeholder="Enter amount ">
+                                                           	    	</div>
+                                                           	    	
+
+                                                           	    	<div class="iputdiv">
+                                                           	    		
+                                                           	    		<input type="submit" name="bank" value="Done" style="width:50%;
+                                                           	    		display: flex; align-items: center; justify-content: center; outline: none;
+                                                           	    		border: none; border-radius: 4px; background: skyblue;font-family: Arial Rounded MT;
+                                                           	    		font-weight: bold;">
+                                                           	    	</div>
+                                           	</form>
+                                           </div>
+
+                                           
+	</main>
+<script type="text/javascript" src="java/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+html,body,h1,h3,h4,h5,p,h2{
+	padding: 0px;
+	margin: 0px;
+}
+main{
+	width: 100%;
+	height: 100vh;
+
+}
+.forregister{
+	
+	width: 100%;
+	height: 100vh;
+}
+.register{
+	width: 100%;
+	height: 80vh;
+}
+.register>div{
+	width: 100%;
+	height: px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.register div>label{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.register div>input{
+	width: 80%;
+	border-radius: 5px;
+	height: 30px;
+	outline: none;
+	border: 1px solid gray;
+	
+}
+.signup{
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.signin{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	
+}
+.login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 30vh;
+
+}
+.login div{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+.login div>input{
+	width: 90%;
+	outline: none;
+	border: 1px solid gray;
+	height: 35px;
+	border-radius: 7px;
+	
+}
+
+
+.homepage{
+	width: 100%;
+	height: 100vh;
+}
+.sec1{
+	width: 100%;
+	height: 90vh;
+}
+.home{
+	width: 100%;
+	height: 90vh;
+	
+}
+.homehead{
+	width: 100%;
+	height: 10vh;
+	background: grey;
+}
+.homebody{
+overflow: hidden;
+	width: 100%;
+	height: 80vh;
+}
+.mytextdiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 30px;
+	background: ;
+}
+.mytextdiv>h2{
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	font-family: sans-serif;
+	font-size: 15px;
+display: inline-block;
+align-items: center;
+animation-name: mytext;
+animation-duration: 10s;
+margin-left:100% ;
+}
+@keyframes mytext{
+
+	from{margin-left:100%;}
+	to{margin-left:17% ;}
+}
+.p{
+animation-name: load;
+animation-duration: 10s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	width: 0%;
+	height: 4px;
+	background: blue;
+}
+@keyframes load{
+
+	from{width:0%;}
+	to{width:100% ;}
+}
+.dasboardbig{
+	width: 100%;
+	height: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dasboard{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 90%;
+	height:140px;
+	background: rgba(115,187,201,.7);
+	border-radius: 6px;
+}
+.dasboard>h4{
+	font-family: sans-serif;
+	height: 50px;
+	width: 95%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+.dasboard>p{
+	font-family: sans-serif;
+	color: gray;
+}
+.dasboard>h2{
+	font-family: sans-serif;
+	
+}
+.labeldiv{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+	height: 70px;
+	
+}
+.labeldivsmall{
+	width: 90%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.labeldivsmall>label{
+	width: 90px;
+	border-radius: 20px;
+	height: 50px;
+    color: green;	
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.labeldivsmall label>p{
+font-size: 12px;
+color: gray;
+
+font-family: sans-serif;
+
+}
+
+.notification{
+	width: 100%;
+	height: 90vh;
+}
+.notificationhead{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	background: skyblue;
+}
+.notificationhead>h2{
+	font-family: sans-serif;
+}
+
+.notificationbody{
+	width: 100%;
+	height: 80vh;
+	overflow: auto;
+}
+.notificationsmallbody{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	}
+.Notificationimage{
+		width: 45px;
+		height: 45px;
+		border-radius: 45px;
+		background: black;
+}
+.Notificationname{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+		width: 50%;
+		height: 40px;
+		
+	}
+.Notificationname>h3{
+	font-size: 17px;
+font-family: sans-serif;
+	}
+	.Notificationname>span{
+font-family: sans-serif;
+font-weight: lighter;
+font-size: 12px;
+color: gray;
+	}
+.Notificationamout{
+		width: 24%;
+		align-items: center;
+		height: 40px;
+font-family: sans-serif;
+display: flex;
+font-weight: bold;
+justify-content: flex-end;
+	}
+
+.user{
+	width: 100%;
+	height: 90vh;
+
+}
+
+.userhead{
+	width: 100%;
+	height: 10vh;
+
+}
+
+.userbody{
+	overflow: auto;
+	width: 100%;
+	height: 90vh;
+
+}
+.userprofilediv{
+	display: flex;
+	align-items: center;
+justify-content: space-evenly;
+	width: 100%;
+	height: 120px;
+
+}
+.userimage{
+	width: 70px;
+	height: 70px;
+	border-radius: 70px;
+	background-color: black;
+}
+.username{
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 70%;
+	height: 40px;
+}
+.username>h3{
+	font-size: 16px;
+	font-family: sans-serif;
+
+}
+.username>span{
+font-family: sans-serif;
+font-weight: lighter;
+font-size: 12px;
+
+}
+.bigcloum{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	box-shadow: 0px 0px 1px gray;
+}
+.smallcolum{
+	box-shadow: 0px 0px 1px gray;
+	width: 95%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.smallcolum>span{
+	width: 49%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.smallcolum>label{
+	width: 49%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 40px;
+	
+}
+.sec2{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 10vh;
+
+}
+.sec2>label{
+	background: skyblue;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	width: 25%;
+	height: 40px;
+	border-radius: 10px;
+	background: skyblue;
+}
+.send{
+	width: 100%;
+	height: 100vh;
+	background: white;
+	position: absolute;
+	top: 0px;
+}
+.sendhead{
+	width: 100%;
+	height: 10vh;
+	background: blue;
+	
+}
+.container{
+		width: 100%;
+	height: 90vh;
+	overflow: auto;
+
+}
+.sendbody{
+	width: 100%;
+	height: 90vh;
+	background: white;
+	
+}
+.buttondiv{
+	font-family: sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+	width: 100%;
+	height: 60px;
+	
+}
+.buttondiv>button{
+	width: 49%;
+	border-radius: 4px;
+	height: 50px;
+background-color: white;
+	outline: none;
+	border: none;
+	
+	
+}
+.buttondiv>button:hover{
+	background-color: skyblue;
+	
+}
+.iputdiv{
+	width: 100%;
+	height: 100px;
+	justify-content: space-evenly;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	
+}
+.iputdiv>label{
+
+	width: 80%;
+	display: flex;
+	justify-content: flex-start;
+
+	
+}
+.iputdiv>input{
+	width: 80%;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	outline: blue;
+	border: 1px solid gray;
+	
+}
+.Bankbodys{
+	width: 100%;
+	height: 90vh;
+	background: white;
+	
+}
+.iputdiv>select{
+	width: 80%;
+	height: 40px;
+	border-radius: 8px;
+	outline: blue;
+	border: 1px solid gray;
+	
+}
+.Withdraw{
+	width: 100%;
+	height: 100vh;
+	background: white;
+	position: absolute;
+	top: 0px;
+}
+
+.Withdrawhead{
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	background: white;
+	
+}
+.Withdrawhead>label{
+	box-shadow: 0px 0px 1px black;
+	width: 20px;
+	height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+	margin-left: 7px;
+	
+}
+.Withdrawhead>h3{
+	width: 100%;
+
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Withdrawbody{
+	width: 100%;
+	height: 90vh;
+	background: white;
+
+
+}
+.
